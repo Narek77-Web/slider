@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.app{
+    display: flex;
+    width: 80%;
+    height: 80%;
+}
+
+
+.app .slide{
+    flex: 1;
+    height: 100%;
+    margin: .3rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+    transform: flex 500ms linear;
+}
+
+.app .slide h2{
+    position: absolute;
+    right: 1rem;
+    bottom: 3rem;
+    color: wheat;
+    opacity:0 ;
+}
+
+
+.app .slide.active{
+    flex: 10;
+} 
+
+
+.app .slide.active h2{
+    opacity: 1;
+}
+
